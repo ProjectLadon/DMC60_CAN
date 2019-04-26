@@ -1,0 +1,7 @@
+uint8 old_dev_id
+uint8 session_id
+uint8 new_dev_id
+---
+bool success
+uint8 new_dev_id
+uint8 error

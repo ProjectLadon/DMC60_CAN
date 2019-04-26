@@ -1,0 +1,5 @@
+uint8 dev_id
+uint16 session_id
+---
+bool success
+uint8 error

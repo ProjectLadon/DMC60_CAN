@@ -1,0 +1,5 @@
+bool dummy
+---
+bool success
+string dev_list
+uint8 error

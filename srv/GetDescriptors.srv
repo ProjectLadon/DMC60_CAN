@@ -1,0 +1,11 @@
+uint8 dev_id
+uint16 session_id
+---
+bool success
+uint8 error
+string dev_name
+string mfg_name
+string prod_name
+string mfg_date
+string hardware_version
+string serial_num

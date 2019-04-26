@@ -5,17 +5,17 @@ This package provides an interface node for controlling a Digilent DMC60C motor 
 # Dependencies
 
 ## ROS Packages
-* [ros_canopen][https://github.com/ros-industrial/ros_canopen]
-* [ros_control][https://github.com/ros-controls/ros_control]
-* [roslint][https://github.com/ros/roslint]
-* [filters][https://github.com/ros/filters]
-* [pluginlib][https://github.com/ros/pluginlib]
-* [class_loader][https://github.com/ros/class_loader]
-* [cmake_modules][https://github.com/ros/cmake_modules]
+* [ros_canopen](https://github.com/ros-industrial/ros_canopen)
+* [ros_control](https://github.com/ros-controls/ros_control)
+* [roslint](https://github.com/ros/roslint)
+* [filters](https://github.com/ros/filters)
+* [pluginlib](https://github.com/ros/pluginlib)
+* [class_loader](https://github.com/ros/class_loader)
+* [cmake_modules](https://github.com/ros/cmake_modules)
 
 ## System Dependencies
-* [muparser][https://github.com/beltoforion/muparser]
-* [tinyXML2][https://github.com/leethomason/tinyxml2]
+* [muparser](https://github.com/beltoforion/muparser)
+* [tinyXML2](https://github.com/leethomason/tinyxml2)
 
 # Startup Sequence
 The first thing this node does is attempt to enumerate the devices attached to the CAN bus.
@@ -251,7 +251,7 @@ Parameters may be set on a per-device basis or for all devices connected to the 
 If these parameters exist on startup, this node will set them on the target hardware after startup enumeration and when the device number changes. Note that not all parameters available on the device are defined here. See DMC60C CAN Protocol Guide for more information on the format of each one. Note that conversions from ordinary floats to the fixed point versions used by the protocol are handled internally.
 
 | Parameter Name | Function | Default Value | Type |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | ADCcurrentMult | Multiplier used to convert ADC readings into current measurements | 0x0816 | float (16.16 signed) |
 | ProportionalGainSlot0 | Slot 0 closed loop proportional gain | 0 | float (16.16 signed) |
 | IntegralGainSlot0 | Slot 0 closed loop integral gain | 0 | float (16.16 signed) |
